@@ -63,13 +63,13 @@ const Footer = () => {
           <p>
             DESIGN BY{' '}
             <span className="text-white font-medium">
-              {footerData.bottom.designBy}
+              {FooterData.bottom.designBy}
             </span>
           </p>
           <p>
             POWERED BY{' '}
             <span className="text-white font-medium">
-              {footerData.bottom.poweredBy}
+              {FooterData.bottom.poweredBy}
             </span>
           </p>
         </div>
