@@ -3,6 +3,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { useState } from 'react';
+import { all_images } from '../../assets/All_images';
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -33,11 +34,7 @@ function Navbar() {
     <div className="header px-4 bg-[#0F252A] w-full h-[68px]  flex items-center justify-between z-50 sticky top-0 ">
       <div className="divider  flex items-center justify-between w-full ">
         <div className="logo flex items-center justify-center">
-          <img
-            src="src\assets\All images\logo.svg"
-            alt=""
-            className="w-[105px]"
-          />
+          <img src={all_images.Logo} alt="" className="w-[105px]" />
         </div>
 
         <div className=" hidden lg:block menus text-white">
@@ -290,11 +287,7 @@ function Navbar() {
 
         <div className="flex items-center justify-center gap-12 ">
           <div className="ml-20">
-            <img
-              src="src\assets\All images\cart for shoping.svg"
-              alt=""
-              className="md:w-10"
-            />
+            <img src={all_images.Cart} alt="" className="md:w-10" />
           </div>
 
           <div className=" hidden md:flex items-center justify-center md:text-sm lg:text-lg text-white gap-2 w-full">
