@@ -1,7 +1,7 @@
 /** @format */
 
 import { all_images } from '../../assets/All_images';
-import { footerData } from './footerData';
+import { FooterData } from './FooterData';
 
 const Footer = () => {
   return (
@@ -29,15 +29,15 @@ const Footer = () => {
           {/* Logo and Description Section */}
           <div className="lg:col-span-1">
             <h2 className="text-white text-3xl font-bold mb-6 flex items-center">
-              <img src={all_images.logo} alt="" />
+              <img src={all_images.Logo} alt="" />
             </h2>
             <p className="text-sm leading-relaxed max-w-xs">
-              {footerData.logo.description}
+              {FooterData.logo.description}
             </p>
           </div>
 
           {/* Dynamic Link Sections */}
-          {footerData.sections.map((section, index) => (
+          {FooterData.sections.map((section, index) => (
             <div key={index}>
               <h3 className="text-white font-semibold mb-6 text-lg">
                 {section.title}
